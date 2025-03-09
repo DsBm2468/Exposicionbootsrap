@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes de Bootstrap</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="Titulo">5 Componentes de Bootstrap</h1>
+    </header>
+    <header2>
+        <h2 class="estudiantes">Estudiantes:
+            Diana Sofia Benavides Monroy. Código: 55823004
+            <!--<br>gfd
+            <br>gf-->
+        </h2>
+    </header2>
+    <main>
+        <br>
+        <section class="paginacion">
+            <img class="paginacionTitulo" src="recourses/Bootstrap-Pagination-Templates.jpg" alt="">
+            <br>
+            <p class="parrafo1">Es un componente que se encarga de dividir el contenido en páginas separadas y proporciona 
+                los controles necesarios para poder navegar entre ellas de forma fácil y eficiente. 
+                Este consta de un gran bloque de enlaces conectados de forma escalada.
+            </p>
+            <img class="paginacionEjemplo" src="recourses/ejemploPagination.png" alt="">
+            <p class="parrafo2">Para implementarla  se utiliza un elemento &ltnav&gt para identificarlo como una sección de
+                navegación, En el caso en el que las páginas tengan más de una sección de navegación se sugiere agregarle 
+                <span class="destacado">aria - label</span> para así identificar más fácilmente el propósito de esa sección.
+            </p>
+            <div class="cuadro1">
+                <h3 class="nota1">NOTA</h3>
+                <p class="parrafo3">Los atributos ARIA (Accessible Rich Internet Applications) son los encargados de hacer que el contenido web
+                    sea más accesible para personas con discapacidades.
+                    En el caso del atributo “aria-label” se encarga de proporcionar una descripción para elementos de interfaz de usuario.
+                </p>
+            </div>
+            <img class="paginacionBase" src="recourses/paginationCodigoBase.PNG" alt="Código base de paginación">
+            <!--<p class="mensajebajoimagen1">Código base de paginación</p>-->
+            <p class="parrafo4">Se puede implementar el uso de iconos para algunos enlaces de paginación, como lo puede ser las flechas para pasar 
+                de una paginación a otra. se utilizan  los atributos aria.
+            </p>
+            <div class="cuadro2">
+                <h3 class="nota2">NOTA</h3>
+                <p class="parrafo5">El atributo “aria-hidden” se encarga de Ocultar elementos que no aporten información relevante para el usuario.</p>
+            </div>
+            <img class="paginacionIconos" src="recourses/paginationCodigoIconos.PNG">
+            <p class="parrafo6">Con este componente también se pueden personalizar los enlaces de paginación, utilizando <span class="destacado">disabled</span> para que los 
+                enlaces no se les pueda hacer clic y <span class="destacado">.active</span> permite indicar la página actual en la que se encuentra el usuario.  estos elementos 
+                se agregan como clases.
+            </p>
+            <br>
+            <p class="parrafo7">Esta propiedad como tal aún no se encuentra habilitada al 100% en css y requiere agregarle <span class="destacado">tabindex="-1"</span> en los 
+                enlaces que están deshabilitados. 
+                Para que esta funcionaldad se desactive completamente se requiere usar javascript personalizado.
+            </p>
+            <p class="parrafo8">Otra forma de personalizar este componente es Ajustando el tamaño Haciendo lo más grande o más pequeño utilizando <span class="destacado">.pagination-lg</span>
+                 o <span class="destacado">.pagination-sm</span></p>
+            <p class="parrafo9">Finalmente la última forma para personalizar este componente es el cambio de alineación de los elementos de paginación al centro o a la derecha, Esto se realiza al agregar una 
+                clase en &ltul&gt llamada <span class="destacado">pagination justify-content-center.</span> o <span class="destacado">pagination justify-content-end.</span>
+            </p>
+            <img class="paginacionDesactivar" src="recourses/paginationCodigoDesabilitado.PNG">
+            <img class="paginacionGrande" src="recourses/paginationGRANDE.PNG">
+            <img class="paginacionPequeno" src="recourses/paginationPEQUEÑA.PNG">
+        </section>
+
+        <section class="placeholder">
+            <img class="placeholderTitulo" src="recourses/Bootstrap-Placeborder-Templates.png">
+            <br>
+            <p class="parrafo10">Es un componente que se encarga de dar una vista previa a cómo se verá el contenido Cuando cargue al 100%,  la diferencia con el resultado final es que no tendrá texto sino que 
+                 es la silueta de la estructura como tal.
+            </p>
+            <img class="placeholderEjemplo" src="recourses/ejemploPlaceborder.PNG" alt="">
+            <img class="placeholderCodigoEjm" src="recourses/placeborderCodigoejemplo.PNG" alt="">
+            <p class="parrafo11">Para utilizarlo se crean marcadores de posición en la clase <span class="destacado">.placeholder</span> y una clase de columna de cuadrícula (ejem: <span class="destacado">col-6</span>) para establecer el width. </p>
+            <img class="placeholderBase" src="recourses/placeborderCodigobase.PNG" alt="">
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            <p class="parrafo12">Cuando se quiere cambiar el width, se realiza el cambio mediante clases de columnas, para ello hay tres formas:</p>
+            <img class="placeholderAncho" src="recourses/placeborderCodigoancho.PNG">
+            <p class="parrafo13">También de forma predeterminada se le puede incluir color a través de <span class="destacado">currentColor</span></p>
+            <img class="placeholderColor" src="recourses/placeborderCodigocolor.PNG" alt="">
+            <p class="parrafo14">Para ajustar el tamaño se  puede utilizar <span class="destacado">.placeholder-lg</span> (grande), <span class="destacado">.placeholder-sm</span> (pequeño) o <span class="destacado">.placeholder-xs</span> (más pequeño)</p>
+            <img class="placeholderTamano" src="recourses/placeborderCodigotamaño.PNG" alt="">
+            <p class="parrafo15">Finalmente, para agregarle un toque de movimiento para transmitir mejor la percepción de que el elemento se encuentra cargando se utiliza <span class="destacado">.placeholder-glow</span> o <span class="destacado">.placeholder-wave</span></p>
+            <img class="placeholderCodAnimate" src="recourses/placeborderCodigoanimacion.PNG" alt="">
+            <img class="placebordergif" src="recourses/gifanimacionplaceholder.gif" alt="">
+            <img class="glow" src="recourses/placeholderGlowGIF.gif" alt="">
+            <img class="wave" src="recourses/placeholderWaveGIF.gif" alt="">
+        </section>
+    </main>
+
+    <footer>
+        <h3 class="pieDePagina">Enlaces.</h3>
+        <p class="pieDePagina"><b>Paginación - Curso aprende Bootstrap 5 desde cero. </b><a>https://www.youtube.com/watch?v=hgS9vX7REbw</a></p>
+        <p class="pieDePagina"><b>Bootstrap Tutorial For Beginners #35 - Bootstrap Placeholders </b><a>https://www.youtube.com/watch?v=XU4LPurM5HI&t=19s</a></p>
+        <p class="pieDePagina"><b>ESCODE Componentes de Bootstrap: Placeholders y Pagination. </b><a>https://esdocu.com/bootstrap/componentes/placeholders-y-paginacion/</a></p>
+    </footer>
+</body>
+</html>
