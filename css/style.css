@@ -518,3 +518,28 @@ footer{
 footer a:hover {
     text-decoration: underline; /* Subraya el enlace al pasar el mouse */
 /*}*/
+
+.tituloOffca{
+    color:white;
+    background-color: #451987;
+    text-align: center;
+}
+
+.imgOffca1{
+    width: 800px;
+    margin: 30px;
+    margin-top: 50px;
+}
+
+.imgOffca2{
+    width: 800px;
+}
+
+.sectOffcam{
+    margin: 0px 20px;
+}
+
+.contenedorOffca{
+    display: flex;
+    background-color: #dbcaf3;
+}
