@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Componentes de Bootstrap</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Componentes de Bootstrap</title> 
+  <!-- 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+--> 
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -22,77 +24,8 @@
             <br>gf-->
         </h2>
     </header2>
-    <main>
         <br>
-        <section class="sectOffcam">
-            <h1 class="tituloOffca">Offcanvas</h1>
-            <p>Offcanvas permite mostrar contenido oculto en un panel lateral o flotante.</p>
-                
-            <h4>Ejemplo:</h4>
-            <p>Haz clic en el botón para activar Offcanvas:</p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demoOffcanvas">
-                Abrir Offcanvas
-            </button>
-                
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="demoOffcanvas">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title">Ejemplo de Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <p>Este es un panel Offcanvas que se desliza desde el lado izquierdo.</p>
-                </div>
-            </div>     
-            
-            <h3 class="bdOffcaTitulo">¿Cómo funciona?</h3>
-            
-            <div class="contenedorOffca">
-                <div>
-                    <p>Bootstrap lo maneja usando clases CSS y eventos de JavaScript. Los botones o enlaces se usan como activadores con atributos <code>data</code> que se usan para invocar un JavaScript de Bootstrap.</p>
-                    <h5>-Botón:</h5>
-                    <ul>
-                        <li><code>class="btn btn-primary"</code> Aplica estilos de Bootstrap para hacer un botón azul.</li>
-                        <li><code>data-bs-toggle="offcanvas"</code> Activa el Offcanvas al hacer clic.</li>
-                        <li><code>data-bs-target="#demoOffcanvas"</code> Especifica el ID del Offcanvas que se abrirá.</li>
-                    </ul>
-                    <h5>-Panel:</h5>
-                    <ul>
-                        <li><code>offcanvas</code> Define el contenedor del Offcanvas.</li>
-                    <li><code>offcanvas-start</code> Hace que el panel aparezca desde la izquierda.</li>
-                    <li><code>class="offcanvas-header"</code> Define la cabecera del Offcanvas.</li>
-                    <li><code>class="offcanvas-title"</code> Muestra el título dentro del Offcanvas.</li>
-                    <li><code>class="btn-close"</code> Botón de cierre con diseño de Bootstrap.</li>
-                    <li><code>data-bs-dismiss="offcanvas"</code> Cierra el Offcanvas al hacer clic.</li>
-                    <li><code>class="offcanvas-body"</code> Contenedor para el contenido dentro del Offcanvas.</li>
-                    </ul>
-                </div>
-                <div>
-                    <img src="Img/CodigoOffcanvas.png" class="imgOffca1">
-                </div>
-            </div>
-            
-                <div>
-                    <h3>Variaciones:</h3>
-                    <p>El Offcanvas puede aparecer desde diferentes lados:</p>
-                    <ul>
-                        <li><code>offcanvas-start</code> (izquierda)</li>
-                        <li><code>offcanvas-end</code> (derecha)</li>
-                        <li><code>offcanvas-top</code> (arriba)</li>
-                        <li><code>offcanvas-bottom</code> (abajo)</li>
-                    </ul>
-                </div>
-
-            <h3>Personalización:</h3>
-            <div>
-                    <p>Se puede modificar su apariencia con clases de Bootstrap y CSS agregando una clase o usando las que ya están como <code>.offcanvas</code>, <code>.offcanvas-body</code>, <code>offcanvas-title</code>, etc.</p>
-                <div>
-                    <img src="Img/CodigoCssOffcanvas.png" class="imgOffca2">
-                </div>
-            </div>
-            <br>    
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        </section>
-
+     <main>
         <section class="paginacion">
             <img class="paginacionTitulo" src="recourses/Bootstrap-Pagination-Templates.jpg" alt="">
             <br>
@@ -165,6 +98,75 @@
             <img class="wave" src="recourses/placeholderWaveGIF.gif" alt="">
         </section>
     </main>
+
+        <section class="sectOffcam">
+            <h1 class="tituloOffca">Offcanvas</h1>
+            <p>Offcanvas permite mostrar contenido oculto en un panel lateral o flotante.</p>
+                
+            <h4>Ejemplo:</h4>
+            <p>Haz clic en el botón para activar Offcanvas:</p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demoOffcanvas">
+                Abrir Offcanvas
+            </button>
+                
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="demoOffcanvas">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Ejemplo de Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <p>Este es un panel Offcanvas que se desliza desde el lado izquierdo.</p>
+                </div>
+            </div>     
+            
+            <h3 class="bdOffcaTitulo">¿Cómo funciona?</h3>
+            
+            <div class="contenedorOffca">
+                <div>
+                    <p>Bootstrap lo maneja usando clases CSS y eventos de JavaScript. Los botones o enlaces se usan como activadores con atributos <code>data</code> que se usan para invocar un JavaScript de Bootstrap.</p>
+                    <h5>-Botón:</h5>
+                    <ul>
+                        <li><code>class="btn btn-primary"</code> Aplica estilos de Bootstrap para hacer un botón azul.</li>
+                        <li><code>data-bs-toggle="offcanvas"</code> Activa el Offcanvas al hacer clic.</li>
+                        <li><code>data-bs-target="#demoOffcanvas"</code> Especifica el ID del Offcanvas que se abrirá.</li>
+                    </ul>
+                    <h5>-Panel:</h5>
+                    <ul>
+                        <li><code>offcanvas</code> Define el contenedor del Offcanvas.</li>
+                    <li><code>offcanvas-start</code> Hace que el panel aparezca desde la izquierda.</li>
+                    <li><code>class="offcanvas-header"</code> Define la cabecera del Offcanvas.</li>
+                    <li><code>class="offcanvas-title"</code> Muestra el título dentro del Offcanvas.</li>
+                    <li><code>class="btn-close"</code> Botón de cierre con diseño de Bootstrap.</li>
+                    <li><code>data-bs-dismiss="offcanvas"</code> Cierra el Offcanvas al hacer clic.</li>
+                    <li><code>class="offcanvas-body"</code> Contenedor para el contenido dentro del Offcanvas.</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="Img/CodigoOffcanvas.png" class="imgOffca1">
+                </div>
+            </div>
+            
+                <div>
+                    <h3>Variaciones:</h3>
+                    <p>El Offcanvas puede aparecer desde diferentes lados:</p>
+                    <ul>
+                        <li><code>offcanvas-start</code> (izquierda)</li>
+                        <li><code>offcanvas-end</code> (derecha)</li>
+                        <li><code>offcanvas-top</code> (arriba)</li>
+                        <li><code>offcanvas-bottom</code> (abajo)</li>
+                    </ul>
+                </div>
+
+            <h3>Personalización:</h3>
+            <div>
+                    <p>Se puede modificar su apariencia con clases de Bootstrap y CSS agregando una clase o usando las que ya están como <code>.offcanvas</code>, <code>.offcanvas-body</code>, <code>offcanvas-title</code>, etc.</p>
+                <div>
+                    <img src="Img/CodigoCssOffcanvas.png" class="imgOffca2">
+                </div>
+            </div>
+            <br>    
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        </section>
 
     <footer>
         <h3 class="pieDePagina">Enlaces.</h3>

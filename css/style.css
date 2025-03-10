@@ -523,6 +523,7 @@ footer a:hover {
     color:white;
     background-color: #451987;
     text-align: center;
+    font-size: 30px;
 }
 
 .imgOffca1{
@@ -542,4 +543,9 @@ footer a:hover {
 .contenedorOffca{
     display: flex;
     background-color: #dbcaf3;
+}
+
+code{
+    color: rgb(233, 23, 0);
+    font-size: 15px;
 }
